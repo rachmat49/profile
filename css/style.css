@@ -154,6 +154,96 @@ nav ul li a:hover {
 .js { width: 75%; }
 .wp { width: 80%; }
 
+.skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.sidebar-info {
+    flex: 1 1 260px;
+    max-width: 320px;
+}
+
+.details-box {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.details-content {
+    color: #444;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.details-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.details-label {
+    color: #888;
+}
+
+.skills-list {
+    margin-bottom: 1.2rem;
+}
+
+.skill-label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar-static {
+    background: #222;
+    height: 4px;
+    margin-bottom: 0.7rem;
+    border-radius: 2px;
+}
+
+.main-skills {
+    flex: 2 1 480px;
+}
+
+.main-title {
+    margin-bottom: 2rem;
+}
+
+.education-section, .training-section {
+    margin-top: 2.5rem;
+}
+
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.edu-date {
+    color: #888;
+}
+
+.training-list {
+    padding-left: 1.2rem;
+    color: #444;
+}
+
+.training-list li {
+    margin-bottom: 0.7rem;
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
@@ -266,5 +356,16 @@ footer {
     nav ul {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .sidebar-info, .main-skills {
+        max-width: 100%;
+        flex: 1 1 100%;
     }
 }
