@@ -169,7 +169,7 @@ nav ul li a:hover {
     color: #333;
 }
 .skill-bar-fill.db {
-    width: 75%;
+    width: 90%;
     background: linear-gradient(90deg,#6f42c1,#b39ddb);
 }
 
